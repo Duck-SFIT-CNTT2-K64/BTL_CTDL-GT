@@ -1,0 +1,8 @@
+5 4
+0 1 1 0 0 
+1 0 0 1 0 
+1 0 0 0 0 
+0 1 0 0 1 
+0 0 0 1 0 
+Duong di ngan nhat tu 4 den 1 co do dai: 2
+Cac dinh tren duong di: 4 -> 3 -> 1
