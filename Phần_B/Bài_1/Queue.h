@@ -7,7 +7,7 @@ using namespace std;
 template<class T>
 
 class Queue{
-    // f: front, r: rear (Chuẩn bị được đưa vào), size: number of elements, space: capacity
+    // f: front, r: rear, size: number of elements, space: capacity
     int f, r, size, space;
     T* elem;
 public:

@@ -4,5 +4,4 @@
 1 0 0 0 0 
 0 1 0 0 1 
 0 0 0 1 0 
-Duong di ngan nhat tu 4 den 1 co do dai: 2
-Cac dinh tren duong di: 4 -> 3 -> 1
+Mot trong cac dinh 9 hoac 12 khong ton tai trong do thi.

@@ -1,5 +1,5 @@
-#include "Queue.h"
-#include "Vector.h"
+#include "./Queue.h"
+#include "./Vector.h"
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -87,7 +87,7 @@ public:
             cout << "Cac dinh tren duong di: ";
             Vector<int> path;
             for (int i = v; i != -1; i = parent[i]) {
-                path.push_back(i);
+                path.push_back(i); // truy vết ngược lại từ v sang u
             }
             
             // In đường đi
