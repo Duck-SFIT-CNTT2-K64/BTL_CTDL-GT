@@ -1,4 +1,4 @@
-#include <iostream>
+#include <bits/stdc++.h>
 #ifndef __CAR__
 #define __CAR__
 
@@ -40,14 +40,17 @@ public:
         return is;
     }
     //Xuat thong tin o to
-    friend ostream& operator<<(ostream &os, Car &carOther){
-        os << endl;
-        os << "Bien so: " << carOther.bienso << endl;
-        os << "Hang xe: " << carOther.hang << endl;
-        os << "Nam san xuat cua xe: " << carOther.namsx << endl;
-        os << "Gia ca cua xe: " << carOther.gia << endl;
-        return os;
-    }
+    friend ostream& operator<<(ostream &os, Car &carOther) {
+    os << "+--------------------+------------------------+" << endl;
+    os << "|      Thuoc tinh    |        Gia Tri         |" << endl;
+    os << "+--------------------+------------------------+" << endl;
+    os << "| Bien so            | " << setw(20) << carOther.bienso << " |" << endl;
+    os << "| Hang xe            | " << setw(20) << carOther.hang << " |" << endl;
+    os << "| Nam san xuat       | " << setw(20) << carOther.namsx << " |" << endl;
+    os << "| Gia ca             | " << setw(20) << carOther.gia << " |" << endl;
+    os << "+--------------------+------------------------+" << endl;
+    return os;
+}
     //Toan tu so sanh < theo gia ca cua o to
     bool operator<(const Car &carOther) const{
         return this->gia < carOther.gia;
