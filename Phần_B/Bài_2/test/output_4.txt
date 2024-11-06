@@ -1,0 +1,5 @@
+2 1
+0 1 
+1 0 
+Duong di ngan nhat tu 0 den 1 co do dai: 1
+Cac dinh tren duong di: 0 -> 1

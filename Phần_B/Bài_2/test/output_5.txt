@@ -1,0 +1,6 @@
+4 4
+0 1 0 1 
+1 0 1 0 
+0 1 0 1 
+1 0 1 0 
+Mot trong cac dinh 0 hoac 5 khong ton tai trong do thi.

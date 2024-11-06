@@ -21,7 +21,7 @@ public:
     }
 
     void nhap_file() {
-        freopen("input.txt", "r", stdin);
+        freopen("./test/input_5.txt", "r", stdin);
         cin >> n >> m;
         matrix.resize(n, Vector<int>(n, 0));
         for (int i = 0; i < m; i++) {
@@ -34,7 +34,7 @@ public:
     }
 
     void xuat_file() {
-        freopen("output.txt", "w", stdout);
+        freopen("./test/output_5.txt", "w", stdout);
         cout << n << " " << m << endl;
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {

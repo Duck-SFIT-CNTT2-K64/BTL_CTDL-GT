@@ -1,7 +1,0 @@
-5 4
-0 1 1 0 0 
-1 0 0 1 0 
-1 0 0 0 0 
-0 1 0 0 1 
-0 0 0 1 0 
-Mot trong cac dinh 9 hoac 12 khong ton tai trong do thi.
