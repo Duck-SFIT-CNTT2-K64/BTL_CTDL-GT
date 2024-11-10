@@ -29,9 +29,23 @@ public:
             switch(choice){
                 case 1:{
                     Car car;
-                    cin >> car;
-                    cars.addCar(car);
-                    cout << "\nThem o to thanh cong!.\n";
+                    string bienso;
+                    bool isValid;
+                    do {
+                        cout << "Nhap bien so: ";
+                        cin >> bienso;
+                        // Kiểm tra biển số có trùng không
+                        if(cars.testPlate(bienso)) {
+                            cout << "Bien so da ton tai! Vui long nhap lai.\n";
+                            isValid = false;
+                        } else {
+                            isValid = true;
+                            car.set_bienso(bienso);
+                            cin >> car;  // Nhập các thông tin còn lại
+                            cars.addCar(car);
+                            cout << "\nThem o to thanh cong!\n";
+                        }
+                    } while(!isValid);
                     break;
                 }
                 case 2:{
@@ -68,9 +82,14 @@ public:
                     break;
                 }
                 case 5:{
-                    cars.sortCarsByPrice();
-                    cout << "Danh sach o to sau khi sap xep theo gia tien: ";
-                    cars.printCars();
+                    if(!cars.empty()){
+                        cars.sortCarsByPrice();
+                        cout << "Danh sach o to sau khi sap xep theo gia tien: ";
+                        cars.printCars();
+                    }
+                    else{
+                        cout << "\nDanh sach o to trong!.\n";
+                    }
                     break;
                 }
                 case 6:{
